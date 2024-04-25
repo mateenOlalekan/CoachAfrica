@@ -1,0 +1,36 @@
+.triangle {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    z-index: 34;
+}
+
+
+.zigzag {
+    position: absolute;
+    bottom: 70.30px;
+    left: 70px;
+    z-index: 34;
+}
+
+
+.red {
+    position: absolute;
+    bottom: 0.30px;
+    left: 180px;
+    z-index: 34;
+}
+
+.red2 {
+    position: absolute;
+    top: 350px;
+    right: 120px;
+    transform: rotate(280deg);
+}
+
+.WBlue {
+    position: absolute;
+    top: 250px;
+    right: 120px;
+    z-index: 38;
+}

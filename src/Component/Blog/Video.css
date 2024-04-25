@@ -1,0 +1,217 @@
+ .frame {
+  align-items: center;
+  display: inline-flex;
+  position: absolute;
+}
+
+.div {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 4px;
+  position: relative;
+}
+
+.icon-solid-arrow {
+  height: 20px !important;
+  position: relative !important;
+  width: 20px !important;
+}
+
+.text-wrapper-2 {
+  color: var(--grey-900);
+  font-family: "Causten-SemiBold", Helvetica;
+  font-size: 10px;
+  font-weight: 600;
+  height: 11px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: 21px;
+}
+
+.text-wrapper-3 {
+  color: var(--grey-900);
+  font-family: "Causten-SemiBold", Helvetica;
+  font-size: 10px;
+  font-weight: 600;
+  height: 11px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: 4px;
+}
+
+.div-wrapper {
+  align-items: center;
+  background-color: var(--secodary);
+  border-radius: 1px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  height: 11px;
+  justify-content: center;
+  padding: 20px 4px 18px;
+  position: relative;
+}
+
+.text-wrapper-4 {
+  color: var(--background);
+  font-family: "Causten-SemiBold", Helvetica;
+  font-size: 10px;
+  font-weight: 600;
+  height: 9px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-bottom: -17px;
+  margin-top: -19px;
+  position: relative;
+  white-space: nowrap;
+  width: 6px;
+}
+
+.text-wrapper-5 {
+  color: var(--grey-900);
+  font-family: "Causten-SemiBold", Helvetica;
+  font-size: 10px;
+  font-weight: 600;
+  height: 11px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: 11px;
+}
+
+.frame-2 {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mask-group {
+  height: 609.48px;
+  position: relative;
+  width: 973px;
+}
+
+.frame-3 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 24px;
+  position: relative;
+}
+
+.group {
+  background-image: url(./whatsapp-image-2023-11-21-at-12-24-10-2.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 184px;
+  position: relative;
+  width: 340px;
+}
+
+.overlap-group {
+  background-color: #0101016b;
+  border-radius: 8px;
+  height: 184px;
+  position: relative;
+}
+
+.vector {
+  height: 42px;
+  left: 149px;
+  position: absolute;
+  top: 75px;
+  width: 42px;
+}
+
+.overlap-wrapper {
+  background-image: url(./mask-group-3.png);
+  background-size: 100% 100%;
+  height: 180px;
+  position: relative;
+  width: 300px;
+}
+
+.overlap {
+  background-color: #0101016b;
+  border-radius: 8px;
+  height: 184px;
+  position: relative;
+  width: 295px;
+}
+
+.img {
+  height: 42px;
+  left: 127px;
+  position: absolute;
+  top: 75px;
+  width: 42px;
+}
+
+.overlap-group-wrapper {
+  background-image: url(./mask-group-4.png);
+  background-size: 100% 100%;
+  height: 180px;
+  position: relative;
+  width: 300px;
+}
+
+.group-2 {
+  background-image: url(./whatsapp-image-2023-11-21-at-12-24-10-3.png);
+  background-size: 100% 100%;
+  background-size: cover;
+  height: 180px;
+  position: relative;
+  width: 300px;
+}
+
+.group-3 {
+  background-image: url(../../Logo/Coaches/Coach01.png);
+  background-size: 100% 100%;
+  object-fit: cover;
+  overflow: hidden;
+  height: 180px;
+  position: relative;
+  width: 300px;
+}
+
+.group-4 {
+  background-image: url(./mask-group-6.png);
+  background-size: 50% 50%;
+  height: 180px;
+  position: relative;
+  width: 300px;
+}
+
+.group-5 {
+  background-image: url(./whatsapp-image-2023-11-21-at-12-24-10.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 180px;
+  position: relative;
+  width: 300px;
+}
+
+.group-6 {
+  background-image: url(./image.png);
+  background-size: 100% 100%;
+  height: 180px;
+  position: relative;
+  width: 300px;
+}
+
+.group-7 {
+  background-image: url(./mask-group-2.png);
+  background-size: 100% 100%;
+  height: 180px;
+  position: relative;
+  width: 296.16px;
+}
+

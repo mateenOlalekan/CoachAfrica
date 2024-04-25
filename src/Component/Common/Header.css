@@ -1,0 +1,33 @@
+/* header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+} */
+
+/* Header.css */
+
+/* Sticky header styles */
+.relative.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Box shadow for sticky header */
+.relative.sticky.shadow-md {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Active link bottom border */
+.active {
+    border-bottom: 3px solid #4CAF50
+
+    /* Adjust color and thickness as needed */
+}
+
+/* Navbar styles */
+/* Add your styles for navbar here */
