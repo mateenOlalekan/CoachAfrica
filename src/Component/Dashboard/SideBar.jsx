@@ -1,6 +1,6 @@
-import { LightIcon, TeamsIcon, BillingIcon, InvoicesIcon, AccountIcon, LogoutIcon } from './ReactionIcons';
+import { FaLightbulb, FaUsers, FaMoneyBillAlt, FaFileInvoiceDollar, FaUserAlt, FaSignOutAlt } from 'react-icons/fa';
 
-function Sidebar() {
+function SideBar() {
   return (
     <div className="flex h-screen w-16 flex-col justify-between border-e bg-white">
       <div>
@@ -17,7 +17,7 @@ function Sidebar() {
                 href="#"
                 className="t group relative flex justify-center rounded bg-blue-50 px-2 py-1.5 text-blue-700"
               >
-                <LightIcon className="size-5 opacity-75" />
+                <FaLightbulb className="size-5 opacity-75" />
 
                 <span
                   className="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible"
@@ -33,7 +33,7 @@ function Sidebar() {
                   href="#"
                   className="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
                 >
-                  <TeamsIcon className="size-5 opacity-75" />
+                  <FaUsers className="size-5 opacity-75" />
 
                   <span
                     className="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible"
@@ -48,7 +48,7 @@ function Sidebar() {
                   href="#"
                   className="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
                 >
-                  <BillingIcon className="size-5 opacity-75" />
+                  <FaMoneyBillAlt className="size-5 opacity-75" />
 
                   <span
                     className="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible"
@@ -63,7 +63,7 @@ function Sidebar() {
                   href="#"
                   className="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
                 >
-                  <InvoicesIcon className="size-5 opacity-75" />
+                  <FaFileInvoiceDollar className="size-5 opacity-75" />
 
                   <span
                     className="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible"
@@ -78,7 +78,7 @@ function Sidebar() {
                   href="#"
                   className="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
                 >
-                  <AccountIcon className="size-5 opacity-75" />
+                  <FaUserAlt className="size-5 opacity-75" />
 
                   <span
                     className="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible"
@@ -98,7 +98,7 @@ function Sidebar() {
             type="submit"
             className="group relative flex w-full justify-center rounded-lg px-2 py-1.5 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
           >
-            <LogoutIcon className="size-5 opacity-75" />
+            <FaSignOutAlt className="size-5 opacity-75" />
 
             <span
               className="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible"
@@ -112,4 +112,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar
+export default SideBar
