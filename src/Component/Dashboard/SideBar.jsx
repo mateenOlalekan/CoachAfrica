@@ -1,108 +1,68 @@
-import { FaLightbulb, FaUsers, FaMoneyBillAlt, FaFileInvoiceDollar, FaUserAlt, FaSignOutAlt } from 'react-icons/fa';
+import { FaHome, FaCalendarAlt} from 'react-icons/fa';
+import { MdPerson } from "react-icons/md";
+import { HiSignal } from "react-icons/hi2";
+import logo from "../../assets/Image/logo1.png";
+import { Link } from "react-router-dom";
+import { AiOutlineLogout } from "react-icons/ai";
 
 function SideBar() {
   return (
-    <div className="flex h-screen w-16 flex-col justify-between border-e bg-white">
+    <div className="flex h-screen w-44 max-lg:w-20 flex-col justify-between border-e bg-white duration-1000 transition-all">
       <div>
-        <div className="inline-flex size-16 items-center justify-center">
-          <span className="grid size-10 place-content-center rounded-lg bg-gray-100 text-xs text-gray-600">
-            L
-          </span>
+        <div className="inline-flex size-auto items-center justify-center px-2 py-4">
+          <img src={logo} className='w-auto' alt="Logo" />
         </div>
 
         <div className="border-t border-gray-100">
           <div className="px-2">
-            <div className="py-4">
-              <a
-                href="#"
-                className="t group relative flex justify-center rounded bg-blue-50 px-2 py-1.5 text-blue-700"
-              >
-                <FaLightbulb className="size-5 opacity-75" />
-
-                <span
-                  className="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible"
-                >
-                  General
-                </span>
-              </a>
-            </div>
-
-            <ul className="space-y-1 border-t border-gray-100 pt-4">
+            <ul className="space-y-1 border-t flex flex-col border-gray-100 pt-4 gap-4">
               <li>
-                <a
-                  href="#"
-                  className="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-                >
-                  <FaUsers className="size-5 opacity-75" />
-
-                  <span
-                    className="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible"
-                  >
-                    Teams
+                <Link to="#" className="relative flex items-center max-lg:justify-center rounded p-2 gap-3 text-[#6A6A6A]  hover:bg-gray-50 hover:text-[#79C701]">
+                  <FaHome className="size-5 opacity-75" />
+                  <p className='text-[14px] max-lg:hidden'>Dashboard</p>
+                  <span className="invisible absolute start-full ml-2 top-1/2 w-24 transform -translate-y-1/2 rounded bg-gray-600 px-2 py-1.5 text-[14px]  font-medium text-white z-50 group-hover:visible">
+                    Live Classes
                   </span>
-                </a>
+                </Link>
               </li>
-
               <li>
-                <a
-                  href="#"
-                  className="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-                >
-                  <FaMoneyBillAlt className="size-5 opacity-75" />
-
-                  <span
-                    className="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible"
-                  >
-                    Billing
+                <Link to="#" className="group relative flex items-center max-lg:justify-center rounded p-2 gap-3 text-[#6A6A6A]  hover:bg-gray-50 hover:text-[#79C701]">
+                  <HiSignal className="size-5 opacity-75" />
+                   <p className='text-[14px] max-lg:hidden'>Live Classes</p>
+                  <span className="invisible absolute start-full ml-2 top-1/2 w-24 transform -translate-y-1/2 rounded bg-gray-600 px-2 py-1.5 text-[14px]  font-medium text-white z-50 group-hover:visible">
+                    Live Classes
                   </span>
-                </a>
+                </Link>
               </li>
-
               <li>
-                <a
-                  href="#"
-                  className="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-                >
-                  <FaFileInvoiceDollar className="size-5 opacity-75" />
-
-                  <span
-                    className="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible"
-                  >
-                    Invoices
+                <Link to="#" className="group relative flex items-center max-lg:justify-center rounded p-2 gap-3 text-[#6A6A6A]  hover:bg-gray-50 hover:text-[#79C701]">
+                  <FaCalendarAlt className="size-5 opacity-75" />
+                   <p className='text-[14px] max-lg:hidden'>Schedule</p>
+                  <span className="invisible absolute start-full ml-2 top-1/2 transform -translate-y-1/2 rounded bg-gray-600 px-2 py-1.5 text-[14px]  font-medium text-white z-50 group-hover:visible">
+                    Schedule
                   </span>
-                </a>
+                </Link>
               </li>
-
               <li>
-                <a
-                  href="#"
-                  className="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-                >
-                  <FaUserAlt className="size-5 opacity-75" />
-
-                  <span
-                    className="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible"
-                  >
-                    Account
+                <Link to="#" className="group relative flex items-center max-lg:justify-center rounded p-2 gap-3 text-[#6A6A6A]  hover:bg-gray-50 hover:text-[#79C701]">
+                  <MdPerson className="size-5 opacity-75" />
+                   <p className='text-[14px] max-lg:hidden'>Teacher & I</p>
+                  <span className="invisible absolute start-full ml-2 w-24 top-1/2 transform -translate-y-1/2 rounded bg-gray-600 px-2 py-1.5 text-[14px]  font-medium text-white z-50 group-hover:visible">
+                    Teacher & I
                   </span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div className="sticky inset-x-0 bottom-0 border-t border-gray-100 bg-white p-2">
+      <div className="sticky inset-x-0 bottom-0 border-t border-gray-100 bg-[#FFEFEF] text-red-600 p-2">
         <form action="#">
-          <button
-            type="submit"
-            className="group relative flex w-full justify-center rounded-lg px-2 py-1.5 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-          >
-            <FaSignOutAlt className="size-5 opacity-75" />
-
-            <span
-              className="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible"
-            >
+          <button type="submit" className="group relative flex w-full justify-center rounded-lg px-2 py-1.5 text-sm text-gray-500 hover:bg-gray-50 hover:text-[#79C701]">
+            <AiOutlineLogout className="w-5 h-5 opacity-75  text-red-600" />
+            <p className='text-[14px] max-lg:hidden  text-red-600'>Logout</p>
+            <span className="invisible absolute start-full top-1/2 transform -translate-y-1/2 rounded bg-gray-600 px-2 py-1.5 text-[14px] font-medium text-white z-50 group-hover:visible">
               Logout
             </span>
           </button>
@@ -112,4 +72,6 @@ function SideBar() {
   );
 }
 
-export default SideBar
+export default SideBar;
+
+

@@ -4,13 +4,12 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { AiOutlineLogout } from "react-icons/ai";
-import { FaHome, FaUser, FaCalendarAlt} from 'react-icons/fa';
+import { FaHome, FaUser} from 'react-icons/fa';
 
 const dropdownItems = [
-  { icon: <FaHome />, name: 'Home', textColor: 'text-red-500', bgColor: 'bg-red-100' },
-  { icon: <FaUser />, name: 'Profile', textColor: 'text-green-500', bgColor: 'bg-green-100' },
-  { icon: <FaCalendarAlt />, name: 'Calendar', textColor: 'text-blue-500', bgColor: 'bg-blue-100' },
-  { icon: <AiOutlineLogout />, name: 'Logout', textColor: 'text-yellow-500', bgColor: 'bg-yellow-100' }
+  { icon: <FaHome />, name: 'Home', textColor: 'text-purple-500', bgColor: 'bg-purple-100' },
+  { icon: <FaUser />, name: 'Profile', textColor: 'text-blue-500', bgColor: 'bg-blue-100' },
+  { icon: <AiOutlineLogout />, name: 'Logout', textColor: 'text-red-500', bgColor: 'bg-red-100' }
 ];
 
 function ScheduleHeader() {
@@ -42,7 +41,7 @@ function ScheduleHeader() {
               <BiChevronDown className="w-5 h-5 stroke-current" />
             )}
             {isOpen && (
-              <div  className="absolute right-0 mt-[15rem] w-48  bg-white overflow-hidden  shadow-lg border rounded-lg">
+              <div  className="absolute right-0 mt-[11.5rem] w-48  bg-white overflow-hidden  shadow-lg border rounded-lg">
                 {/* Dropdown items */}
                 <ul>
                   {dropdownItems.map((item, index) => (
