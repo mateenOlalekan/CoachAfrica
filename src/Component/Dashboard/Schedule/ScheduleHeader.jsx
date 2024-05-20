@@ -1,7 +1,7 @@
 import { FiBell, FiUser} from 'react-icons/fi';
 import { BiChevronDown, BiChevronUp } from 'react-icons/bi';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+
 
 import { AiOutlineLogout } from "react-icons/ai";
 import { FaHome, FaUser} from 'react-icons/fa';

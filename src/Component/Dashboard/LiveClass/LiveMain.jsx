@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { FaSearch, FaPlus } from 'react-icons/fa';
 import LiveClass from './LiveClass';
 import ClassHistory from './LiveHistory';
-import ScheduleHeader from '../Schedule/ScheduleHeader';
 
 function Tab({ title, isActive, onClick }) {
   return (
@@ -23,10 +22,8 @@ function LiveMain() {
   };
 
   return (
-    <div className="py-2 px-2 mt-2 w-full  pb-3 overflow-y-auto overflow-hidden">
-      <ScheduleHeader/>
-
-      <div className='flex px-7 text-lg text-black justify-between items-center'>
+    <>
+      <div className='flex max-lg:flex-col px-2 text-lg w-full text-black justify-between items-center gap-y-2'>
         <div className="flex gap-10 justify-end max-md:justify-between max-md:w-full items-start text-lg">
           <Tab title="Live Classes" isActive={activeTab === 'tab1'} onClick={() => handleTabClick('tab1')} />
           <Tab title="Class History" isActive={activeTab === 'tab2'} onClick={() => handleTabClick('tab2')} />
@@ -49,7 +46,8 @@ function LiveMain() {
         {activeTab === 'tab1' && <LiveClass />}
         {activeTab === 'tab2' && <ClassHistory />}
       </section>
-    </div>
+    </>
+
   );
 }
 

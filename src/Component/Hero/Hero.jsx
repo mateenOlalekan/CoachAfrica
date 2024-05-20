@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <div className='relative flex w-full items-center justify-center bg-white pt-2'>
     
-    <div className="grid items-center  max-w-[83rem] grid-cols-1 gap-1 lg:grid-cols-2 px-10">
+    <div className="grid items-center  max-w-[84rem] grid-cols-1 gap-1 lg:grid-cols-2 px-6">
 
       <div data-aos="fade-up"
      data-aos-duration="3000" className="flex flex-col justify-center items-start gap-6 ">

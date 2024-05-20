@@ -7,9 +7,10 @@ import About from "./Pages/About";
 import Service from "./Pages/Service";
 import Blog from "./Pages/Blog";
 import Dashboard from "./Pages/Dashboard";
-// import Teacher from "./Component/Dashboard/Teacher/Teacher";
-// import LiveClass from "./Component/Dashboard/Live Class/Index";
+import Teacher from "./Component/Dashboard/Teacher/Teacher";
+import LiveClass from "./Component/Dashboard/LiveClass/LiveMain";
 // import Login from "./Pages/Login";
+import Schedule from "./Component/Dashboard/Schedule/Index";
 function App() {
   return (
     <>
@@ -20,10 +21,14 @@ function App() {
         <Route path="/about" element={<About/>}/>
         <Route path="/service" element={<Service/>}/>
         <Route path="/blog" element={<Blog/>}/>
-         <Route path="/dashboard" element={<Dashboard/>}/>
-        {/* <Route path="/dashboard" element={<Dashboard/>}/>
+        <Route path="/dashboard" element={<Dashboard/>}/>
+        <Route path="/schedule" element={<Schedule/>}/>
         <Route path="/liveclass" element={<LiveClass/>}/>
-        <Route path="/teacher" element={<Teacher/>}/> */}
+        <Route path="/teacher" element={<Teacher/>}/>
+        
+        {/*
+        <Route path="/liveclass" element={<LiveClass/>}/>
+         */}
       </Routes>
     </>
   )

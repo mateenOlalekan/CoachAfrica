@@ -19,7 +19,7 @@ function ClassHistory() {
         <section className="grid grid-cols-2 lg:grid-cols-3 max-md:grid-cols-1 gap-4 justify-center items-start mt-2">
         <div className="flex flex-col py-3 px-4 rounded-lg border border-gray-300 gap-2 bg-[#ffffff]">
           <p className="text-left text-xl font-semibold">Teacher As Leader</p>
-          <scan className="text-left font-semibold border-2 p-2 rounded-lg w-max mt-5 text-[#989898]">Batch 1st Cohort</scan>
+          <scan className="text-left font-semibold border-2 p-2 rounded-lg w-max mt-1 text-[#989898]">Batch 1st Cohort</scan>
           <div className="flex gap-3 text-[#989898]">
             <div className="flex justify-start items-center gap-1">
               <FaCalendarDays/>{date}
@@ -34,7 +34,7 @@ function ClassHistory() {
 
         <div className="flex flex-col py-3 px-4 rounded-lg border border-gray-300 gap-2 bg-[#ffffff]">
           <p className="text-left text-xl font-semibold">Mindset Coaching</p>
-          <scan className="text-left font-semibold border-2 p-2 rounded-lg w-max mt-5 text-[#989898]">Batch 1st Cohort</scan>
+          <scan className="text-left font-semibold border-2 p-2 rounded-lg w-max mt-1 text-[#989898]">Batch 1st Cohort</scan>
           <div className="flex gap-3 text-[#989898]">
             <div className="flex justify-start items-center gap-1">
               <FaCalendarDays/>{date}
@@ -49,7 +49,7 @@ function ClassHistory() {
 
         <div className="flex flex-col py-3 px-4 rounded-lg border border-gray-300 gap-2 bg-[#ffffff]">
           <p className="text-left text-xl font-semibold">Pedagogical Coaching</p>
-          <scan className="text-left font-semibold border-2 p-2 rounded-lg w-max mt-5 text-[#989898]">Batch 1st Cohort</scan>
+          <scan className="text-left font-semibold border-2 p-2 rounded-lg w-max mt-1 text-[#989898]">Batch 1st Cohort</scan>
           <div className="flex gap-3 text-[#989898]">
             <div className="flex justify-start items-center gap-1">
               <FaCalendarDays/>{date}
