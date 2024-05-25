@@ -54,20 +54,20 @@ function AboutContent() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-end w-full py-4">
+    <div className="flex flex-col items-center justify-end w-full py-4 ">
       {/* Founder Section */}
       <div data-aos="fade-down"
-     data-aos-duration="3000" className="grid min-lg:grid-cols-2 py-4  max-w-[82rem] gap-20 items-center 
+     data-aos-duration="3000" className="grid min-lg:grid-cols-2  py-7 lg:px-20 max-lg:px-6 transition-shadow duration-[0.75s] gap-10 items-center 
                       md:grid-cols-2
                       max-md:grid-cols-1 
                       max-w-sm:grid-cols-1   max-w-sm:py-10 px-10">
         <div className="flex flex-col gap-4">
           <h1 className="text-5xl font-semibold pb-5">Afees Iyiola - FOUNDER</h1>
-          <div className="text-[14px]">
+          <div className="text-[17px]">
             Coachfrika is an innovative edtech social enterprise that provides personalized coaching 
             support to teachers in public and private schools across Nigeria.
           </div>
-          <div className="text-[14px]">
+          <div className="text-[17px]">
             Our mission is to bridge the education inequality gap by empowering teachers with the skills 
             and resources they need to become purposeful, effective, and efficient leaders in their classrooms. 
             Through our hybridized one-on-one coaching approach, we help teachers develop better leadership, 
@@ -75,7 +75,7 @@ function AboutContent() {
             and enhancing learning outcomes. Our unique platform connects passionate educational and leadership 
             coaches with teachers, creating a dynamic ecosystem that fosters professional growth and development.
           </div>
-          <div className="text-[14px]">
+          <div className="text-[17px]">
             Our goal is to provide top-notch coaching to educators throughout Africa to help them become purposeful,
             effective, and efficient teacher-leaders in their classrooms. We believe that through our coaching, teachers 
             will experience greater job satisfaction and career fulfillment while accelerating their progress. 
@@ -85,10 +85,10 @@ function AboutContent() {
           </div>
         </div>
         <div data-aos="fade-up" data-aos-duration="3000" className="relative grid place-items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" className="absolute top-[-45px] right-[45px]" width="84" height="68" viewBox="0 0 81 70" fill="none">
+          <svg xmlns="http://www.w3.org/2000/svg" className="absolute top-[-50px] right-[90px]" width="84" height="68" viewBox="0 0 81 70" fill="none">
             <path d="M69.3173 66.1833C66.9993 45.687 50.5958 6.87166 3.52666 15.581" stroke="#FAAF18" strokeWidth="25"/>
           </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" className="absolute bottom-[-45px] left-[40px]" width="81" height="70" viewBox="0 0 81 70" fill="none">
+          <svg xmlns="http://www.w3.org/2000/svg" className="absolute bottom-[-50px] left-[90px]" width="81" height="70" viewBox="0 0 81 70" fill="none">
             <path d="M14.1441 1.81284C15.8213 22.3715 31.0053 61.6798 78.3234 54.4438" stroke="#029837" strokeWidth="25"/>
           </svg>
           <img src={AboutImg} alt="Coach" className="rounded w-7/12" />

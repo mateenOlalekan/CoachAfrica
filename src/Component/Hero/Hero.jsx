@@ -15,13 +15,13 @@ const Hero = () => {
     AOS.init();
   },[]);
   return (
-    <div className='relative flex w-full items-center justify-center bg-white pt-2'>
+    <div className='relative flex w-full items-center justify-center bg-white pt-2 py-7 lg:px-20 max-lg:px-6 transition-shadow duration-[0.75s]'>
     
-    <div className="grid items-center  max-w-[84rem] grid-cols-1 gap-1 lg:grid-cols-2 px-6">
+    <div className="grid items-center   grid-cols-1 gap-1 lg:grid-cols-2">
 
       <div data-aos="fade-up"
      data-aos-duration="3000" className="flex flex-col justify-center items-start gap-6 ">
-        <div className="xl:text-[50px] md:text-5xl max-md:mt-2 max-md:text-[40px] font-semibold text-black leading-tight">
+        <div className="xl:text-[60px] md:text-6xl max-md:mt-2 max-md:text-[40px] font-semibold text-black leading-tight">
           Personalized Coaching Supports For Teachers and Educators.
         </div>
         <div className="text-2xl max-md:text-xl text-black">
@@ -50,6 +50,41 @@ const Hero = () => {
               text={`${0.90 * 100}%`} 
               className=''
             />
+                            <span className="relative  z-10">
+                  <svg
+                    width="93"
+                    height="93"
+                    viewBox="0 0 93 93"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="2.5" cy="2.5" r="2.5" fill="#3056D3" />
+                    <circle cx="2.5" cy="24.5" r="2.5" fill="#3056D3" />
+                    <circle cx="2.5" cy="46.5" r="2.5" fill="#3056D3" />
+                    <circle cx="2.5" cy="68.5" r="2.5" fill="#3056D3" />
+                    <circle cx="2.5" cy="90.5" r="2.5" fill="#3056D3" />
+                    <circle cx="24.5" cy="2.5" r="2.5" fill="#3056D3" />
+                    <circle cx="24.5" cy="24.5" r="2.5" fill="#3056D3" />
+                    <circle cx="24.5" cy="46.5" r="2.5" fill="#3056D3" />
+                    <circle cx="24.5" cy="68.5" r="2.5" fill="#3056D3" />
+                    <circle cx="24.5" cy="90.5" r="2.5" fill="#3056D3" />
+                    <circle cx="46.5" cy="2.5" r="2.5" fill="#3056D3" />
+                    <circle cx="46.5" cy="24.5" r="2.5" fill="#3056D3" />
+                    <circle cx="46.5" cy="46.5" r="2.5" fill="#3056D3" />
+                    <circle cx="46.5" cy="68.5" r="2.5" fill="#3056D3" />
+                    <circle cx="46.5" cy="90.5" r="2.5" fill="#3056D3" />
+                    <circle cx="68.5" cy="2.5" r="2.5" fill="#3056D3" />
+                    <circle cx="68.5" cy="24.5" r="2.5" fill="#3056D3" />
+                    <circle cx="68.5" cy="46.5" r="2.5" fill="#3056D3" />
+                    <circle cx="68.5" cy="68.5" r="2.5" fill="#3056D3" />
+                    <circle cx="68.5" cy="90.5" r="2.5" fill="#3056D3" />
+                    <circle cx="90.5" cy="2.5" r="2.5" fill="#3056D3" />
+                    <circle cx="90.5" cy="24.5" r="2.5" fill="#3056D3" />
+                    <circle cx="90.5" cy="46.5" r="2.5" fill="#3056D3" />
+                    <circle cx="90.5" cy="68.5" r="2.5" fill="#3056D3" />
+                    <circle cx="90.5" cy="90.5" r="2.5" fill="#3056D3" />
+                  </svg>
+                </span>
           </div>
           <span className="block text-sm">Success<br/>Result</span>
         </div>
