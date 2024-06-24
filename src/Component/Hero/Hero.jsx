@@ -22,7 +22,7 @@ const Hero = () => {
       <div data-aos="fade-up"
      data-aos-duration="3000" className="flex flex-col justify-center items-start gap-6 ">
         <div className="xl:text-[60px] md:text-6xl max-md:mt-2 max-md:text-[40px] font-semibold text-black leading-tight">
-          Personalized Coaching Supports For Teachers and Educators.
+          Personalized halo Coaching Supports For Teachers and Educators.
         </div>
         <div className="text-2xl max-md:text-xl text-black">
           Empowering Africa's Educators Through A Modern and Smart Approach
