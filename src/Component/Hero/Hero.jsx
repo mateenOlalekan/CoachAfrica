@@ -11,86 +11,95 @@ import 'aos/dist/aos.css';
 const supportImages = [support1, support2, support3];
 
 const Hero = () => {
-  useEffect(()=>{
-    AOS.init();
-  },[]);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100,
+      easing: 'ease-out-cubic'
+    });
+  }, []);
+
   return (
-    <div className='relative flex w-full items-center justify-center bg-white pt-2 py-7 lg:px-20 max-lg:px-6 transition-shadow duration-[0.75s]'>
-    
-    <div className="grid items-center   grid-cols-1 gap-1 lg:grid-cols-2">
-
-      <div data-aos="fade-up"
-     data-aos-duration="3000" className="flex flex-col justify-center items-start gap-6 ">
-        <div className="xl:text-[60px] md:text-6xl max-md:mt-2 max-md:text-[40px] font-semibold text-black leading-tight">
-          Personalized halo Coaching Supports For Teachers and Educators.
-        </div>
-        <div className="text-2xl max-md:text-xl text-black">
-          Empowering Africa's Educators Through A Modern and Smart Approach
-        </div>
-        <button className="Hero-btn text-white bg-[#038A4F] text-xl border border-white rounded-md px-10 py-2 transition duration-300 ease-in-out hover:text-[#038A4F] hover:bg-white hover:border-[#038A4F]">
-          Join Us
-        </button>
-        <div className="text-2xl font-semibold text-black mt-4">Support and trusted by</div>
-        <div className="flex justify-end items-center gap-4">
-          {supportImages.map((support, index) => (
-            <img key={index} src={support} alt={`Support Logo ${index + 1}`} className="w-full h-auto" />
-          ))}
-        </div>
-      </div>
-
-      <div data-aos="fade-up"
-     data-aos-duration="3000"  className=' relative flex h-full max-md:justify-center justify-end w-full gap-10 max-lg:hidden'>
-        <img src={HeroImg} className='w-8/12 max-sm:w-full h-9/12 block'/>
-         <div className=" flex Success items-center  absolute -bottom-10 left-80 transform translate-x-[-50%] translate-y-[-50%]  gap-8 bg-[rgba(255, 255, 255, 0.31)] border-[0.88px solid #f8f8f8] rounded-[10px] shadow-md p-4">
-          <div  style={{ width: 60, height: 60 }}>
-            <CircularProgressbar 
-              value={0.90} 
-              maxValue={1} 
-              styles={buildStyles({ pathColor: '#4CAF50' })} 
-              text={`${0.90 * 100}%`} 
-              className=''
-            />
-                            <span className="relative  z-10">
-                  <svg
-                    width="93"
-                    height="93"
-                    viewBox="0 0 93 93"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="2.5" cy="2.5" r="2.5" fill="#3056D3" />
-                    <circle cx="2.5" cy="24.5" r="2.5" fill="#3056D3" />
-                    <circle cx="2.5" cy="46.5" r="2.5" fill="#3056D3" />
-                    <circle cx="2.5" cy="68.5" r="2.5" fill="#3056D3" />
-                    <circle cx="2.5" cy="90.5" r="2.5" fill="#3056D3" />
-                    <circle cx="24.5" cy="2.5" r="2.5" fill="#3056D3" />
-                    <circle cx="24.5" cy="24.5" r="2.5" fill="#3056D3" />
-                    <circle cx="24.5" cy="46.5" r="2.5" fill="#3056D3" />
-                    <circle cx="24.5" cy="68.5" r="2.5" fill="#3056D3" />
-                    <circle cx="24.5" cy="90.5" r="2.5" fill="#3056D3" />
-                    <circle cx="46.5" cy="2.5" r="2.5" fill="#3056D3" />
-                    <circle cx="46.5" cy="24.5" r="2.5" fill="#3056D3" />
-                    <circle cx="46.5" cy="46.5" r="2.5" fill="#3056D3" />
-                    <circle cx="46.5" cy="68.5" r="2.5" fill="#3056D3" />
-                    <circle cx="46.5" cy="90.5" r="2.5" fill="#3056D3" />
-                    <circle cx="68.5" cy="2.5" r="2.5" fill="#3056D3" />
-                    <circle cx="68.5" cy="24.5" r="2.5" fill="#3056D3" />
-                    <circle cx="68.5" cy="46.5" r="2.5" fill="#3056D3" />
-                    <circle cx="68.5" cy="68.5" r="2.5" fill="#3056D3" />
-                    <circle cx="68.5" cy="90.5" r="2.5" fill="#3056D3" />
-                    <circle cx="90.5" cy="2.5" r="2.5" fill="#3056D3" />
-                    <circle cx="90.5" cy="24.5" r="2.5" fill="#3056D3" />
-                    <circle cx="90.5" cy="46.5" r="2.5" fill="#3056D3" />
-                    <circle cx="90.5" cy="68.5" r="2.5" fill="#3056D3" />
-                    <circle cx="90.5" cy="90.5" r="2.5" fill="#3056D3" />
-                  </svg>
-                </span>
+    <div className='relative w-full min-h-screen flex items-center justify-center bg-white py-12 px-4 sm:px-6 lg:px-20 transition-all duration-500'>
+      <div className="container mx-auto">
+        <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
+          {/* Left Content */}
+          <div 
+            data-aos="fade-right"
+            data-aos-delay="200"
+            className="flex flex-col justify-center items-start space-y-8"
+          >
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              Personalized Coaching Supports For Teachers and Educators
+            </h1>
+            
+            <p className="text-xl sm:text-2xl text-gray-600 max-w-2xl">
+              Empowering Africa&apos;s Educators Through A Modern and Smart Approach
+            </p>
+            
+            <button className="btn-primary text-lg px-8 py-3 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              Join Us
+            </button>
+            
+            <div className="w-full mt-8">
+              <h3 className="text-xl font-semibold text-gray-800 mb-6">Support and trusted by</h3>
+              <div className="flex flex-wrap items-center gap-6">
+                {supportImages.map((support, index) => (
+                  <img 
+                    key={index} 
+                    src={support} 
+                    alt={`Support Logo ${index + 1}`} 
+                    className="h-12 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+                    data-aos="fade-up"
+                    data-aos-delay={300 + (index * 100)}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
-          <span className="block text-sm">Success<br/>Result</span>
+
+          {/* Right Content */}
+          <div 
+            data-aos="fade-left"
+            data-aos-delay="400"
+            className="relative flex justify-center lg:justify-end w-full"
+          >
+            <div className="relative w-full max-w-lg">
+              <img 
+                src={HeroImg} 
+                alt="Hero" 
+                className="w-full h-auto object-contain transform transition-all duration-500 hover:scale-105"
+              />
+              
+              {/* Success Card */}
+              <div 
+                className="absolute -bottom-10 -right-10 bg-white/80 backdrop-blur-sm border border-gray-100 rounded-xl shadow-xl p-6 flex items-center gap-6 transform transition-all duration-300 hover:scale-105"
+                data-aos="zoom-in"
+                data-aos-delay="600"
+              >
+                <div className="w-16 h-16">
+                  <CircularProgressbar 
+                    value={90} 
+                    maxValue={100}
+                    text={`${90}%`}
+                    styles={buildStyles({
+                      pathColor: '#4CAF50',
+                      textColor: '#4CAF50',
+                      trailColor: '#E5E7EB',
+                      textSize: '24px'
+                    })}
+                  />
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-bold text-gray-900">90%</span>
+                  <span className="text-sm text-gray-600">Success Rate</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-    </div>
     </div>
   );
 }
